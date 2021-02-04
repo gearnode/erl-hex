@@ -17,7 +17,7 @@ versions can be modified without backward compatibility at any time.
 ### `encode/1`
 Encodes a binary into a hex encoded binary.
 
-Same as `encode(Bin, [lowercase])`.
+Same as `encode(Bin, [])`.
 
 ### `encode/2`
 Encodes a binary into a hex encoded binary.

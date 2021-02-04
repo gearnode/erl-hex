@@ -19,11 +19,11 @@
 
 -spec encode(binary()) -> binary().
 encode(Bin) when is_binary(Bin) ->
-  encode(Bin, [lowercase]).
+  encode(Bin, []).
 
 -spec encode(binary(), Options) -> binary() when
     Options :: [Option],
-    Option :: lowercase | uppercase.
+    Option :: uppercase.
 encode(Bin, Options) when is_binary(Bin), is_list(Options) ->
   case proplists:get_bool(uppercase, Options) of
     false ->

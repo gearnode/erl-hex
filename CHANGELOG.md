@@ -10,6 +10,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Use Github action as CI.
 ### Fixed
 - Typo in the handbook.
+- Remove lowercase has an valid option.
 
 ## [0.1.0] (2021-02-03)
 ### Added
