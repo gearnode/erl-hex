@@ -1,5 +1,5 @@
 # Introduction
-This repository contains development notes about the `hex` library.
+This document contains development notes about the `hex` library.
 
 # Versioning
 The following `hex` versions are available:
@@ -12,13 +12,14 @@ Developers who use unstable or experimental versions are responsible for
 updating their application when `hex` is modified. Note that unstable
 versions can be modified without backward compatibility at any time.
 
-# Functions
-## `encode/1`
+# Modules
+## `hex`
+### `encode/1`
 Encodes a binary into a hex encoded binary.
 
 Same as `encode(Bin, [lowercase])`.
 
-## `encode/2`
+### `encode/2`
 Encodes a binary into a hex encoded binary.
 
 Example:
@@ -26,7 +27,7 @@ Example:
 hex:encode(<<"foobar">>, [uppercase]).
 ```
 
-## `decode/1`
+### `decode/1`
 Decodes a hex encoded binary into a binary.
 
 Example:
