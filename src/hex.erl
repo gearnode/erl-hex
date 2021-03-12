@@ -39,7 +39,9 @@ encode(<<>>, _Enc16, Acc) ->
 encode(<<A0:4, B0:4, Rest/binary>>, Enc16, Acc) ->
   A = Enc16(A0),
   B = Enc16(B0),
-  encode(Rest, Enc16, <<Acc/binary, A, B>>).
+  encode(Rest, Enc16, <<Acc/binary, A, B>>);
+encode(Bin, _, _) ->
+  erlang:error(inavlid_hex, Bin).
 
 -spec enc_hex_digit_upper(0..15) ->
         $A..$F | $0..$9.
