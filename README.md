@@ -2,6 +2,11 @@
 This repository contains an Erlang module to deal with hexadecimal
 encoding.
 
+# Disclaimer
+This repository is not maintained anymore as the OTP team has merge [my
+path](https://github.com/erlang/otp/pull/3014) to introduce the hex
+encoding/decoding in the binary module.
+
 # Build
 You can build the library with:
 
